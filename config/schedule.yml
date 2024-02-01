@@ -1,0 +1,4 @@
+job:
+  cron: "1 * * * *"
+  class: "LatestTemperatureRecordsWorker"
+  queue: schedule

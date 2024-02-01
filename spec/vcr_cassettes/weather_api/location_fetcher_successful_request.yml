@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dataservice.accuweather.com/locations/v1/28580?apikey=apikey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Feb 2024 14:18:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '896'
+      Connection:
+      - keep-alive
+      Request-Context:
+      - appId=cid-v1:cc223195-bccf-4201-9cde-374567896e20
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '10'
+      X-Location-Key:
+      - '28580'
+      X-Gmt-Offset:
+      - '3'
+      X-Location-Stem:
+      - by/minsk/28580
+      X-Station-Code:
+      - UMMM
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=38906
+      Expires:
+      - Fri, 02 Feb 2024 01:07:07 GMT
+      Akamai-Grn:
+      - 0.340cde17.1706797121.11b1b34c
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Ruby
+      X-Forwarded-For:
+      - 37.214.69.192
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+    body:
+      encoding: UTF-8
+      string: '{"Version":1,"Key":"28580","Type":"City","Rank":20,"LocalizedName":"Minsk","EnglishName":"Minsk","PrimaryPostalCode":"","Region":{"ID":"EUR","LocalizedName":"Europe","EnglishName":"Europe"},"Country":{"ID":"BY","LocalizedName":"Belarus","EnglishName":"Belarus"},"AdministrativeArea":{"ID":"HM","LocalizedName":"Minsk
+        City","EnglishName":"Minsk City","Level":1,"LocalizedType":"Municipality","EnglishType":"Municipality","CountryID":"BY"},"TimeZone":{"Code":"MSK","Name":"Europe/Minsk","GmtOffset":3.0,"IsDaylightSaving":false,"NextOffsetChange":null},"GeoPosition":{"Latitude":53.9,"Longitude":27.576,"Elevation":{"Metric":{"Value":213.0,"Unit":"m","UnitType":5},"Imperial":{"Value":698.0,"Unit":"ft","UnitType":0}}},"IsAlias":false,"SupplementalAdminAreas":[],"DataSets":["AirQualityCurrentConditions","AirQualityForecasts","DailyPollenForecast","ForecastConfidence","FutureRadar","MinuteCast"]}'
+  recorded_at: Thu, 01 Feb 2024 14:18:41 GMT
+recorded_with: VCR 6.2.0

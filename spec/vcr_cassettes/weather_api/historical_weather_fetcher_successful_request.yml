@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dataservice.accuweather.com/currentconditions/v1/28580/historical/24?apikey=apikey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Feb 2024 14:18:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11714'
+      Connection:
+      - keep-alive
+      Request-Context:
+      - appId=cid-v1:0158d69b-75d9-4a19-9e5f-a14693f847e4
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '10'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=545
+      Expires:
+      - Thu, 01 Feb 2024 14:27:45 GMT
+      Akamai-Grn:
+      - 0.070cde17.1706797120.165d03d1
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Ruby
+      X-Forwarded-For:
+      - 37.214.69.192
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2024-02-01T16:57:00+03:00","EpochTime":1706795820,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":1.0,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T15:57:00+03:00","EpochTime":1706792220,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":1.6,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T14:57:00+03:00","EpochTime":1706788620,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":1.9,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T13:57:00+03:00","EpochTime":1706785020,"WeatherText":"Light
+        snow","WeatherIcon":19,"HasPrecipitation":true,"PrecipitationType":"Snow","IsDayTime":true,"Temperature":{"Metric":{"Value":1.4,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T12:57:00+03:00","EpochTime":1706781420,"WeatherText":"Light
+        snow","WeatherIcon":19,"HasPrecipitation":true,"PrecipitationType":"Snow","IsDayTime":true,"Temperature":{"Metric":{"Value":2.1,"Unit":"C","UnitType":17},"Imperial":{"Value":36.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T11:57:00+03:00","EpochTime":1706777820,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":1.4,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T10:57:00+03:00","EpochTime":1706774220,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":2.0,"Unit":"C","UnitType":17},"Imperial":{"Value":36.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T09:57:00+03:00","EpochTime":1706770620,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":1.0,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T08:58:00+03:00","EpochTime":1706767080,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":0.5,"Unit":"C","UnitType":17},"Imperial":{"Value":33.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T07:57:00+03:00","EpochTime":1706763420,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-3.1,"Unit":"C","UnitType":17},"Imperial":{"Value":26.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T06:57:00+03:00","EpochTime":1706759820,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-1.0,"Unit":"C","UnitType":17},"Imperial":{"Value":30.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T05:57:00+03:00","EpochTime":1706756220,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-0.7,"Unit":"C","UnitType":17},"Imperial":{"Value":31.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T04:57:00+03:00","EpochTime":1706752620,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":0.9,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T03:57:00+03:00","EpochTime":1706749020,"WeatherText":"Mostly
+        clear","WeatherIcon":34,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":2.1,"Unit":"C","UnitType":17},"Imperial":{"Value":36.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T02:57:00+03:00","EpochTime":1706745420,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":1.0,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T01:57:00+03:00","EpochTime":1706741820,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":1.0,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-02-01T00:57:00+03:00","EpochTime":1706738220,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":1.9,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-01-31T23:57:00+03:00","EpochTime":1706734620,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":1.0,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-01-31T22:57:00+03:00","EpochTime":1706731020,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":1.0,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-01-31T21:57:00+03:00","EpochTime":1706727420,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":1.8,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-01-31T20:56:00+03:00","EpochTime":1706723760,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":0.9,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-01-31T19:57:00+03:00","EpochTime":1706720220,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":1.0,"Unit":"C","UnitType":17},"Imperial":{"Value":34.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-01-31T18:57:00+03:00","EpochTime":1706716620,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":2.3,"Unit":"C","UnitType":17},"Imperial":{"Value":36.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"},{"LocalObservationDateTime":"2024-01-31T17:57:00+03:00","EpochTime":1706713020,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":1.9,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"}]'
+  recorded_at: Thu, 01 Feb 2024 14:18:40 GMT
+recorded_with: VCR 6.2.0
