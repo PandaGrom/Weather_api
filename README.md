@@ -1,24 +1,26 @@
-# README
+### Project setup:
+Navigate the project folder and run
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+bundle install
+```
+Initialize project database settings:
 
-Things you may want to cover:
+```
+bundle exec rails db:setup
+```
 
-* Ruby version
+### Run server
 
-* System dependencies
+To run server: 
 
-* Configuration
+```
+bundle exec rails s
+```
 
-* Database creation
+### Run sidekiq
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Sidekiq is used for cronjob
+```
+bundle exec sidekiq -C config/sidekiq.yml
+```
